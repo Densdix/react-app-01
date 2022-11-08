@@ -35,4 +35,5 @@
   left: calc(50% - 4em);
   border-radius: 50%;
   transition: opacity 0.3s;
+  user-select: none;
 }
