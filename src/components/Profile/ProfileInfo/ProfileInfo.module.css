@@ -1,0 +1,22 @@
+.description{
+    padding: 10px;
+}
+
+.avatar{
+    width: 50px;
+}
+
+.aboutMe{
+    color:powderblue;
+    font-weight: bold;
+}
+
+.aboutMeEmpty{
+    color: darkred;
+    font-weight: bold;
+}
+
+.editImg{
+    padding-left: 5px;
+    width: 20px;
+}
