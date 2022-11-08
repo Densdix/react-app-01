@@ -26,7 +26,7 @@ class App extends Component {
         if (!this.props.initialized) return <Preloader/>
 
         return (
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename="/">
                 <div className="App">
                     <HeaderContainer/>
                     <Sidebar/>
@@ -40,6 +40,7 @@ class App extends Component {
                             <Route path='/users' element={withSuspense(UsersContainer)}/>
                             {/*Lazy load*/}
                             <Route path='/login' element={<React.Suspense fallback={<Preloader/>}><LoginContainer/></React.Suspense>}/>
+                            {/*<Route path='*' element={<div>1234</div>}/>*/}
                         </Routes>
                     </div>
                 </div>
